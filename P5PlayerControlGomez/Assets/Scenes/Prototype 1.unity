@@ -3246,7 +3246,6 @@ GameObject:
   m_Component:
   - component: {fileID: 642475496}
   - component: {fileID: 642475495}
-  - component: {fileID: 642475494}
   - component: {fileID: 642475493}
   m_Layer: 0
   m_Name: TruckCamera
@@ -3269,14 +3268,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1925421538}
   offset: {x: 0, y: 5, z: -7}
---- !u!81 &642475494
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642475492}
-  m_Enabled: 1
 --- !u!20 &642475495
 Camera:
   m_ObjectHideFlags: 0
@@ -4012,7 +4003,7 @@ PrefabInstance:
       addedObject: {fileID: 1925421539}
     - targetCorrespondingSourceObject: {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1925421545}
+      addedObject: {fileID: 1925421549}
   m_SourcePrefab: {fileID: 100100000, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
 --- !u!1001 &807277174
 PrefabInstance:
@@ -6598,6 +6589,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1493d3c4b6b9e394bb44c631b01f6415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  first: {fileID: 534669904}
+  second: {fileID: 2145114505}
+  switchKey: 102
+  player: 1
 --- !u!54 &1413019145
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8804,7 +8799,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 436868, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
   m_PrefabInstance: {fileID: 806430263}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1925421545
+--- !u!114 &1925421549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8813,9 +8808,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1925421538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87cd34a9251791c409f2cc4fb9e41fb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1493d3c4b6b9e394bb44c631b01f6415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  first: {fileID: 642475495}
+  second: {fileID: 2049334000}
+  switchKey: 303
+  player: 2
 --- !u!1 &1928694851
 GameObject:
   m_ObjectHideFlags: 0
@@ -8958,69 +8957,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8780424320546655305, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
   m_PrefabInstance: {fileID: 497760465}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1948803888
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1948803890}
-  - component: {fileID: 1948803889}
-  - component: {fileID: 1948803891}
-  m_Layer: 0
-  m_Name: CameraManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1948803889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948803888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726a5ce05b991934dab5d5d6ffe94f0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Vehicle: {fileID: 1413019139}
-  first: {fileID: 534669902}
-  second: {fileID: 2145114501}
---- !u!4 &1948803890
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948803888}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2152252, y: 0.44919908, z: -2.1408637}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1948803891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948803888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e9f79d974924f34181fe7cce1319127, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Vehicle: {fileID: 1925421538}
-  first: {fileID: 642475492}
-  second: {fileID: 2049333997}
 --- !u!1 &1954914848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 515175755739571116, guid: 46f9eda5f45584fb3ad05abcd7af6df2, type: 3}
@@ -9396,14 +9332,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2049333998}
   - component: {fileID: 2049334000}
-  - component: {fileID: 2049333999}
   m_Layer: 0
   m_Name: TruckCamera2
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2049333998
 Transform:
   m_ObjectHideFlags: 0
@@ -9419,14 +9354,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1925421544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &2049333999
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049333997}
-  m_Enabled: 1
 --- !u!20 &2049334000
 Camera:
   m_ObjectHideFlags: 0
@@ -9434,7 +9361,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049333997}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -9866,22 +9793,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2145114506}
   - component: {fileID: 2145114505}
-  - component: {fileID: 2145114504}
   m_Layer: 0
   m_Name: VroomCamera2
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!81 &2145114504
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145114501}
-  m_Enabled: 1
+  m_IsActive: 1
 --- !u!20 &2145114505
 Camera:
   m_ObjectHideFlags: 0
@@ -9889,7 +9807,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145114501}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -10148,4 +10066,3 @@ SceneRoots:
   - {fileID: 226622592}
   - {fileID: 625890763}
   - {fileID: 1319135887}
-  - {fileID: 1948803890}
