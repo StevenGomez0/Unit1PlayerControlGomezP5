@@ -14,6 +14,7 @@ public class Traffic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //moves oncoming vehicles forward
         transform.Translate(Vector3.forward * Time.deltaTime * trafficSpeed);
     }
 }

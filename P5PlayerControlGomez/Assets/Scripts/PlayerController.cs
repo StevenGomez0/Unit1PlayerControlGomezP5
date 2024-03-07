@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //changes input keys based on which player
         horizontalInput = Input.GetAxis("Horizontal" + player);
         forwardInput = Input.GetAxis("Vertical" + player);
 
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
         // Rotates the vehicle based on horizontal input
         transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
 
+        //changes active camera
         if (Input.GetKeyDown(switchKey))
         {
             first.enabled = !first.enabled;
