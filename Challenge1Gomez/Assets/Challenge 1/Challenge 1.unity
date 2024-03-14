@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3695962c7cb2ac4ea59769120df1ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spin: 720
+  spin: 20
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0

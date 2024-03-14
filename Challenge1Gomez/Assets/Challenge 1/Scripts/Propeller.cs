@@ -8,6 +8,7 @@ public class Propeller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, 2 * spin * Time.deltaTime);
+        //spins propeller at a constant rate on z axis
+        transform.Rotate(0, 0, 90 * spin * Time.deltaTime);
     }
 }
